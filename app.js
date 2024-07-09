@@ -1,4 +1,4 @@
-const cursorFollower = document.querySelector("#cursor-follower");
+const cursorFollower = document.getElementById("cursor-follower");
 const ballRadius = 6;
 
 document.addEventListener("mousemove", (e) => {

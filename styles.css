@@ -10,6 +10,16 @@ body {
   margin: 0;
 }
 
+#cursor-follower {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+  font-size: 1rem;
+}
 h1,
 h2,
 h3,
@@ -148,16 +158,6 @@ h5 {
   animation: background-slide 3s linear;
 }
 
-#cursor-follower {
-  width: 5px;
-  height: 5px;
-  background-color: #F90F92;
-  border-radius: 50%;
-  position: absolute;
-  pointer-events: none;
-  transition: transform 0.3s ease;
-  transform-origin: center;
-}
 #home-skills {
   align-self: flex-start;
   position: absolute;
