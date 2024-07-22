@@ -138,15 +138,10 @@ h5 {
 }
 
 #home-flex-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   height: 90%;
   width: 97%;
   padding: 20px;
   position: relative;
-  background-image: url("images/manface.webp");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -159,9 +154,11 @@ h5 {
 }
 
 #home-skills {
-  align-self: flex-start;
-  position: absolute;
   font-size: larger;
+}
+#home-skills p {
+  line-height: 50px;
+  width: 80%;
 }
 
 #home-skills h3 {
@@ -200,6 +197,12 @@ h5 {
 #home-skills h2 {
   text-transform: capitalize;
   font-weight: bold;
+}
+footer {
+  height: 51vh;
+  width: 100%;
+  background-color: #444;
+  color: whitesmoke;
 }
 
 @media (max-width: 750px) {
