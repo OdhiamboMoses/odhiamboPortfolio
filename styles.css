@@ -240,6 +240,10 @@ footer .links ul > li > a:hover {
   color: royalblue;
 }
 
+.social-links a:hover {
+  transform: translateY(-10px);
+  color: orange;
+}
 @media (max-width: 550px) {
   .menu-items {
     display: none;
@@ -270,6 +274,7 @@ footer .links ul > li > a:hover {
   .footer-first {
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
   }
   .footer-body {
     flex-wrap: wrap;
@@ -503,6 +508,11 @@ footer {
 #cv-grid {
   padding: 0px 20px;
 }
+#cv-contact a {
+  text-decoration: none;
+  color: royalblue;
+  font-weight: bold;
+}
 @media screen and (min-width: 700px) {
   #cv-grid {
     display: grid;
@@ -515,6 +525,7 @@ footer {
     grid-column: 6 / 9;
     align-self: center;
   }
+
   #cv-profile,
   #cv-skills,
   #cv-work,
