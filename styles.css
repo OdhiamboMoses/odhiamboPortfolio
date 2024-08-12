@@ -68,18 +68,16 @@ h5 {
   background-color: white;
   color: #444;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.45);
-  width: 100%;
 }
 
 .nav-bar img {
-  max-width: 60px;
+  max-width: 250px;
 }
 
 .menu-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 30px;
   height: 100%;
 }
 
@@ -106,10 +104,6 @@ h5 {
   font-weight: bold;
   padding: 16px;
 }
-
-.menu-items li {
-  margin-left: 20px;
-}
 .hamberger-icon {
   display: none;
   font-size: 35px;
@@ -117,73 +111,66 @@ h5 {
   cursor: pointer;
 }
 
-@media (max-width: 500px) {
+/*******************************************/
+/* HOME                                    */
+/*******************************************/
+#home {
+  padding: 20px;
+  height: 87vh;
+}
+#home h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+#home p {
+  width: 60%;
+  line-height: 2.95rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+}
+
+.home-btn button {
+  padding: 10px 15px;
+  color: whitesmoke;
+  background-color: green;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.home-cont {
+  display: flex;
+  justify-content: space-between;
+}
+.home-cont img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: 1px 2px 8px royalblue;
+}
+
+#hire {
+  background-color: royalblue;
+}
+
+@media (max-width: 550px) {
   .menu-items {
     display: none;
   }
   .hamberger-icon {
     display: block;
   }
-}
-/*******************************************/
-/* HOME                                    */
-/*******************************************/
-
-#home {
-  height: 90vh;
-  width: 100%;
-  background-image: url("https://dm0qx8t0i9gc9.cloudfront.net/watermarks/image/rDtN98Qoishumwih/rainbow-abstract-vector_SB_PM.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#home-flex-container {
-  height: 90%;
-  width: 97%;
-  padding: 20px;
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  box-shadow: 0px -4px 2px black;
-  margin-left: auto;
-  margin-right: auto;
-  border-left: none;
-  border-right: none;
-  animation: background-slide 3s linear;
-}
-
-#home-skills {
-  font-size: larger;
-}
-#home-skills p {
-  line-height: 50px;
-  width: 80%;
-}
-
-#home-skills h3 {
-  font-size: 40px;
-  font-weight: bold;
-  text-shadow: 2px 1px royalblue;
-}
-
-#home-skills ul li {
-  font-size: 25px;
-  list-style: none;
-}
-
-#home-cv-download {
-  align-self: flex-end;
-}
-
-#home-socials {
-  align-self: flex-end;
-  color: royalblue;
-}
-#home-socials {
-  font-weight: bold;
-  color: green;
-  text-shadow: 1px 1px white;
+  #home p {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+  }
+  #home {
+    height: auto;
+    padding-bottom: 10px;
+  }
 }
 
 /* #eye-container {
@@ -194,10 +181,6 @@ h5 {
   width: 200px;
 } */
 
-#home-skills h2 {
-  text-transform: capitalize;
-  font-weight: bold;
-}
 footer {
   height: 51vh;
   width: 100%;
@@ -206,32 +189,6 @@ footer {
 }
 
 @media (max-width: 750px) {
-  #home-flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 20px;
-    background-image: none;
-  }
-  #home-cv-download {
-    position: absolute;
-  }
-  #home-socials {
-    position: absolute;
-    top: 520px;
-    animation: none;
-  }
-  #home-skills h3 {
-    margin-top: 2px;
-  }
-  #home {
-    background-image: none;
-  }
-  .menu-container {
-    padding: 0px 5px;
-  }
 }
 
 #home-socials button {
