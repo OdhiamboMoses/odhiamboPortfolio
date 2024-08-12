@@ -116,8 +116,8 @@ h5 {
 /*******************************************/
 #home {
   padding: 20px;
-  height: 87vh;
-  animation: btn-slide 1s ease-in 2s;
+  height: auto;
+  animation: background-slide 1s ease-in 2s;
 }
 #home h2 {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -262,6 +262,7 @@ footer .links ul > li > a:hover {
   }
   .home-cont img {
     align-self: center;
+    margin-bottom: 10px;
   }
   footer {
     padding-top: 10px;
@@ -291,6 +292,17 @@ footer .links ul > li > a:hover {
   }
 }
 
+@media (max-width: 700px) {
+  .home-cont {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-evenlys;
+  }
+  .home-cont p {
+    width: 100%;
+  }
+}
+
 /* #eye-container {
   background-image: url("images/both_eyes_gif.gif");
   background-position: center;
@@ -307,9 +319,47 @@ footer {
   padding: 5px;
 }
 
-@media (max-width: 750px) {
+
+.menu-cont {
+  z-index: 210;
+  position: absolute;
+  right: 1px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 1px 2px 3px;
+  padding-right: 10px;
+  background-color: whitesmoke;
 }
 
+.menu-cont li {
+  list-style: none;
+  background-color: #444;
+  margin-bottom: 5px;
+  width: 300px;
+  padding: 10px;
+}
+.menu-cont li:hover {
+  background-color: orange;
+}
+.menu-cont a {
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 15px;
+}
+
+#close-btn {
+  color: whitesmoke;
+  background-color: red;
+  border-radius: 5px;
+  right: 0;
+  padding: 10px;
+  position: absolute;
+  font-size: larger;
+}
+#close-btn:hover {
+  cursor: pointer;
+}
 #home-socials button {
   padding: 20px;
   color: white;
@@ -401,6 +451,8 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  height: auto;
+  padding-bottom: 10px;
 }
 
 .project-card {
