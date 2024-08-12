@@ -319,6 +319,9 @@ footer {
   padding: 5px;
 }
 
+#menu-cont {
+  display: none;
+}
 
 .menu-cont {
   z-index: 210;
